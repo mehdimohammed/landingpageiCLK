@@ -1,0 +1,221 @@
+body{
+	font-family: 'Kufam', cursive;
+	margin: 0;
+}
+
+a:hover {
+	opacity: 0.9;
+}
+
+h1, p {
+	margin: 0 auto;
+}
+
+h2 {
+	text-align: center;
+}
+h3 {
+	margin: 0;
+	text-align: center;
+	padding: 5px;
+}
+.header {
+	background-image: url(images/iphoneheader.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 200px;
+	padding-left: 200px;
+	padding-right: 200px;
+	line-height: 1.6;
+	white-space: pre-line;
+}
+
+.header a {
+	background-color: rgb(78,217,230);
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 20px auto;
+	text-align: left;
+}
+
+.header a:hover {
+	background-color: black;
+}
+
+.header img {
+	display: block;
+	margin: 0px auto;
+	width: 100px;
+}
+
+.btn-blue {
+	background-color: rgb(78,217,230);
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 20px auto;
+	text-align: left;
+}
+.logo {
+	padding: 10px;
+	width: 100px;
+}
+
+/*.navbar {
+	float: right;
+	display: block;
+	position: relative;
+	top: -170;
+	word-spacing: 30px;
+}
+
+.navbar a {
+	grid-gap: 100px;
+	text-decoration: none;
+	color: rgb(27,69,97);
+	font-size: 25px;
+}
+*/
+.container {
+	width: 900;
+	margin: 0 auto;
+}
+
+.cards-container {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+.container h2 {
+	margin-bottom: 0px;
+}
+
+.cards-campus {
+	background-color: white;
+	border-color: grey;
+	box-shadow: 0 0 16px rgba(0,0,0,0.1);
+	padding: 20px;
+	border-radius: 4px;
+	flex-grow: 1;
+}
+
+.text-scroll {
+	font-size: 32px;
+	padding: 10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.cards-campus img {
+	width: 100%;
+	height: 300px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+.cards-campus a {
+	background-color: rgb(27,69,97);
+	color:white;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 15px;
+	margin-top: 10px;
+}
+
+.cards-campus p {
+	text-align: center;
+}
+.concept {
+	padding-top: 25px;
+	margin: 0 auto;
+	width:900;
+}
+
+.concept h2 {
+	margin-bottom: 0px;
+}
+.cards-raisons {
+	grid-gap: 20px;
+	padding: 35px;
+}
+
+.raison {
+	padding: 20px;
+}
+.presse {
+	padding-bottom: 40px;
+}
+
+.cards-square {
+	background-color: white;
+	border-color: grey;
+	box-shadow: 0 0 16px rgba(0,0,0,0.1);
+	padding: 10px;
+	border-radius: 4px;
+	margin: 20px;
+}
+
+.cards-square p {
+	padding: 10px;
+}
+.list-horizontal {
+	display: table;
+	text-align: center;
+	list-style: none;
+	margin: 20px auto;
+	
+}
+
+.list-horizontal img {
+	width:200px;
+	padding-left: 30px;
+	padding-right: 30px;
+	vertical-align: middle;
+	justify-content: center;
+}
+
+.card-black {
+	background-color: black;
+	color: white;
+	padding: 50px;
+}
+
+.CTA {
+	text-align: center;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+.CTA h1 {
+	padding-bottom: 20px;
+}
+
+.footer {
+	background-color: grey;
+	padding: 50px;
+	color: white;
+}
+
+.footer ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.footer li {
+	display: inline;
+	margin-right: 15px;
+}
+
+#image-float {
+	width:450;
+	height: 450;
+	float: left;
+	position: relative;
+	border-radius: 4px;
+	margin: auto 40px;
+}
