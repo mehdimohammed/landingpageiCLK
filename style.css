@@ -1,10 +1,6 @@
 body{
-	font-family: 'Kufam', cursive;
+	font-family: 'Helvetica Neue', cursive;
 	margin: 0;
-}
-
-a:hover {
-	opacity: 0.9;
 }
 
 h1, p {
@@ -13,42 +9,58 @@ h1, p {
 
 h2 {
 	text-align: center;
+	font-size: 35px;
 }
 h3 {
 	margin: 0;
 	text-align: center;
 	padding: 5px;
 }
+
+a:hover {
+	opacity: 0.9;
+	background-color: black;
+}
+
+.conteneur {
+	width: auto;
+	margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+	.conteneur {
+		width: 600px;
+		margin: 0 auto;
+
+	}
+}
+
+@media (max-width: 500px) {
+	.conteneur {
+		width: 400px;
+		margin: 0 auto;
+
+	}
+}
+
 .header {
-	background-image: url(images/iphoneheader.png);
+	background-image: url(images/applewatchheader.jpeg);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-bottom: 200px;
-	padding-left: 200px;
-	padding-right: 200px;
 	line-height: 1.6;
 	white-space: pre-line;
-}
-
-.header a {
-	background-color: rgb(78,217,230);
-	color: white;
-	text-decoration: none;
-	border-radius: 10px;
-	padding: 15px;
-	margin: 20px auto;
-	text-align: left;
-}
-
-.header a:hover {
-	background-color: black;
+	color:white;
+	text-align: center;
+	padding-bottom: 50px;
 }
 
 .header img {
 	display: block;
-	margin: 0px auto;
-	width: 100px;
+	width: 150px;
+}
+.header h1 {
+	font-size: 50px
 }
 
 .btn-blue {
@@ -59,7 +71,9 @@ h3 {
 	padding: 15px;
 	margin: 20px auto;
 	text-align: left;
+	vertical-align: middle;
 }
+
 .logo {
 	padding: 10px;
 	width: 100px;
@@ -81,8 +95,20 @@ h3 {
 }
 */
 .container {
-	width: 900;
+	width: 1000;
 	margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+	.container {
+		width: 600px;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		width: 400px;
+	}
 }
 
 .cards-container {
@@ -90,6 +116,12 @@ h3 {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
 	padding: 20px;
+}
+
+@media (max-width: 760px) {
+	.cards-container {
+	display: inline;
+	}
 }
 
 .container h2 {
@@ -115,7 +147,7 @@ h3 {
 	width: 100%;
 	height: 300px;
 	border-radius: 5px;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .cards-campus a {
@@ -140,24 +172,38 @@ h3 {
 	margin-bottom: 0px;
 }
 .cards-raisons {
+	width: 900px;
+	margin: 0 auto;
 	grid-gap: 20px;
 	padding: 35px;
+	background-color: rgba(220, 220, 220, 0.7);
+}
+
+@media (max-width: 1000px) {
+	.cards-raisons {
+		width: auto;
+	}
 }
 
 .raison {
 	padding: 20px;
+	text-align: center;
 }
+
 .presse {
 	padding-bottom: 40px;
 }
 
 .cards-square {
+	display: inline-block;
 	background-color: white;
 	border-color: grey;
-	box-shadow: 0 0 16px rgba(0,0,0,0.1);
-	padding: 10px;
-	border-radius: 4px;
 	margin: 20px;
+	padding: 40px;
+	margin: 20px 0px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+	border-radius: 5px;
+	text-align: center;
 }
 
 .cards-square p {
@@ -168,7 +214,6 @@ h3 {
 	text-align: center;
 	list-style: none;
 	margin: 20px auto;
-	
 }
 
 .list-horizontal img {
@@ -179,20 +224,27 @@ h3 {
 	justify-content: center;
 }
 
+.entreprises {
+	background-image: url(images/bandzoom.png);
+}
 .card-black {
-	background-color: black;
-	color: white;
+	background-image: url(images/bandsapplewatch.jpg);
+	background-size: cover;
+	color: black;
 	padding: 50px;
 }
 
 .CTA {
 	text-align: center;
 	margin: 20px auto;
-	padding: 20px;
+	padding: 50px;
+	background-image: url(images/bandzoom.png);
+	background-size: cover;
 }
 
 .CTA h1 {
-	padding-bottom: 20px;
+	padding: 30px;
+	text-align: center;
 }
 
 .footer {
