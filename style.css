@@ -263,6 +263,10 @@ a:hover {
 	margin-right: 15px;
 }
 
+.typeform-widget {
+	margin: 0 auto;
+}
+
 #image-float {
 	width:450;
 	height: 450;
